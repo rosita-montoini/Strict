@@ -1,0 +1,101 @@
+.end__endBlock{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: #fff;
+}
+
+.endBlock{
+	background: url(../images/background.jpg);
+    background-size: cover;
+    repeat: no-repeat;
+    position: center;
+    height: 100%;
+
+    &__title{
+    	font-size: 2.5em;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: 2em;
+		margin-bottom: 0.63em;
+    }
+
+    &__description{
+    	font-size: 1.3em;
+		letter-spacing: 0.5px;
+		color: #999999;
+    }
+
+    &__button{
+    	width: 37em;
+		height: 3.5em;
+		border-radius: 0.3em;
+		border: 1px solid #999999;
+		background-color: transparent;
+		color: #999999;
+		font-size: 0.94em;
+		font-weight: 400;
+		letter-spacing: 0.38px;
+		padding-left: 0.94em;
+    }
+
+    &__area{
+    	width: 37em;
+		height: 10em;
+		border-radius: 0.3em;
+		border: 1px solid #999999;
+		background-color: transparent;
+		font-family: Lato;
+		color: #999999;
+		font-size: 0.94em;
+		font-weight: 400;
+		letter-spacing: 0.38px;
+		padding-top: 0.94em;
+		padding-left: 0.94em;
+    }
+
+    .choose{
+    	display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 36em;
+
+		&__subscribe{
+			font-size: 0.94em;
+			font-weight: 400;
+			letter-spacing: 0.38px;
+		}
+
+		&__send{
+			width: 11em;
+			height: 3.4em;
+			border-radius: 2px;
+			border: 1px solid #15a4fa;
+			background-color: transparent;
+			color: #ffffff;
+			font-size: 1.1em;
+			margin-bottom: 80%;
+			-webkit-transition: 3s;
+			transition: 3s;
+
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.8);
+				color: #15a4fa; 
+			}
+		}
+    }
+}
+
+@media (max-width: 800px) and (min-width: 376px) {
+	.endBlock__form {
+		transform: scale(0.9);
+	}
+}
+
+@media (max-width: 375px) and (min-width: 310px) {
+	.endBlock__form {
+		transform: scale(0.7);
+	}
+}
